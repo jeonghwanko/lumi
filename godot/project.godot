@@ -1,0 +1,37 @@
+; Native mobile migration. The original web game is retained one directory above.
+config_version=5
+
+[application]
+config/name="고양이와 커피"
+config/version="0.1.0-native-dev"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/description="Native Godot mobile development build. Facility artwork is temporary."
+
+[display]
+window/size/viewport_width=390
+window/size/viewport_height=844
+window/size/window_width_override=390
+window/size/window_height_override=844
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.96, 0.95, 0.9, 1)
+
+[input_devices]
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+
+[gui]
+theme/default_font_multichannel_signed_distance_field=true
+
+[debug]
+gdscript/warnings/treat_warnings_as_errors=false
+
+[lumi]
+review_mode=true

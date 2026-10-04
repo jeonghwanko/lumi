@@ -1,0 +1,9 @@
+.godot/
+builds/
+test-results/
+*.tmp
+.godot-test-home/
+export_credentials.cfg
+*.keystore
+*.jks
+*.mobileprovision

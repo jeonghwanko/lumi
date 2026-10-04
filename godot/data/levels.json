@@ -1,0 +1,10 @@
+[
+  {"straw":12,"melon":0,"ice":0,"moves":18},
+  {"straw":0,"melon":10,"ice":4,"moves":24},
+  {"straw":8,"melon":8,"ice":0,"moves":22},
+  {"orange":12,"ice":5,"moves":24},
+  {"lemon":10,"crate":6,"moves":26},
+  {"apple":8,"banana":8,"moves":24},
+  {"straw":6,"orange":8,"crate":4,"moves":26},
+  {"melon":8,"banana":8,"ice":4,"moves":28}
+]
