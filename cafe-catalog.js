@@ -1,0 +1,1678 @@
+'use strict';
+(function(root){const data={
+  "currency": "커피 방울",
+  "rewardFirst": 100,
+  "rewardRepeat": 35,
+  "facilities": [
+    {
+      "id": "f01",
+      "number": 1,
+      "name": "원두 선별대",
+      "catId": "cat01",
+      "catName": "조약",
+      "personality": "회색 턱시도, 소매를 걷은 정리 담당. 모든 줄을 반듯하게 맞추고 싶어 함.",
+      "action": "원두를 작은 트레이에 펼치고, 앞발과 작은 집게로 골라 각 칸에 놓는다.",
+      "variation": "반듯하게 맞춘 줄에서 한 알이 굴러가자 온몸은 그대로 두고 앞발만 길게 뻗어 되돌린다.",
+      "result": "정돈된 트레이와 빈 작업면. 재고 숫자 대신 한 작업의 끝을 보여준다.",
+      "chapter": 1,
+      "zone": 0,
+      "motion": "sort",
+      "prop": "tray",
+      "price": 110,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 0.71,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "조약의 원두 선별대 첫 손님",
+        "request": "원두 선별대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "원두를 작은 트레이에 펼치고, 앞발과 작은 집게로 골라 각 칸에 놓는다.",
+        "served": "정돈된 트레이와 빈 작업면. 재고 숫자 대신 한 작업의 끝을 보여준다.",
+        "thanks": "조약 덕분에 오늘의 원두 선별대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f02",
+      "number": 2,
+      "name": "작은 로스터",
+      "catId": "cat02",
+      "catName": "노을",
+      "personality": "주황 줄무늬, 짧은 작업 앞치마. 냄새를 살피는 신중한 장인.",
+      "action": "작은 손잡이를 돌리고 계기를 확인한 뒤, 냉각 트레이를 조심스럽게 흔든다.",
+      "variation": "향을 맡으려고 고개를 가까이 댔다가 자기 수염이 살랑거리는 것을 보고 뿌듯해한다.",
+      "result": "기계 안의 따뜻한 불빛, 트레이 위 재료, 옅게 올라오는 열기.",
+      "chapter": 2,
+      "zone": 0,
+      "motion": "roast",
+      "prop": "roaster",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 1.42,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "노을의 작은 로스터 첫 손님",
+        "request": "작은 로스터에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 손잡이를 돌리고 계기를 확인한 뒤, 냉각 트레이를 조심스럽게 흔든다.",
+        "served": "기계 안의 따뜻한 불빛, 트레이 위 재료, 옅게 올라오는 열기.",
+        "thanks": "노을 덕분에 오늘의 작은 로스터 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f03",
+      "number": 3,
+      "name": "커다란 핸드밀",
+      "catId": "cat03",
+      "catName": "돌돌",
+      "personality": "갈색 줄무늬, 머리띠. 작은 체구지만 일을 크게 벌이는 노력파.",
+      "action": "긴 손잡이를 두 앞발로 잡고 주변을 짧게 돌아 분쇄한다.",
+      "variation": "손잡이를 멈추고도 몸만 반 걸음 더 갔다가 균형을 잡는다.",
+      "result": "서랍에 조금씩 모이는 가루, 손잡이의 원운동.",
+      "chapter": 2,
+      "zone": 0,
+      "motion": "turn",
+      "prop": "mill",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 2.13,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "돌돌의 커다란 핸드밀 첫 손님",
+        "request": "커다란 핸드밀에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "긴 손잡이를 두 앞발로 잡고 주변을 짧게 돌아 분쇄한다.",
+        "served": "서랍에 조금씩 모이는 가루, 손잡이의 원운동.",
+        "thanks": "돌돌 덕분에 오늘의 커다란 핸드밀 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f04",
+      "number": 4,
+      "name": "에스프레소 머신",
+      "catId": "cat04",
+      "catName": "탄이",
+      "personality": "짙은 회색, 단정한 조끼. 자신감은 큰데 레버가 조금 버거운 바리스타.",
+      "action": "필터를 끼우고 레버에 두 앞발을 얹어 체중을 실은 뒤 잔을 확인한다.",
+      "variation": "레버가 돌아오며 뒤꿈치가 들려 잠깐 매달렸다가 아무렇지 않은 척 내려온다.",
+      "result": "짧고 진한 커피 줄기, 움직이는 압력계, 완성된 작은 잔.",
+      "chapter": 3,
+      "zone": 0,
+      "motion": "press",
+      "prop": "machine",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": "sprites/coffee-log/local-espresso.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 2.84,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "탄이의 에스프레소 머신 첫 손님",
+        "request": "에스프레소 머신에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "필터를 끼우고 레버에 두 앞발을 얹어 체중을 실은 뒤 잔을 확인한다.",
+        "served": "짧고 진한 커피 줄기, 움직이는 압력계, 완성된 작은 잔.",
+        "thanks": "탄이 덕분에 오늘의 에스프레소 머신 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f05",
+      "number": 5,
+      "name": "핸드드립 바",
+      "catId": "cat05",
+      "catName": "방울",
+      "personality": "회색과 흰색, 긴 앞치마. 마지막 한 방울도 놓치지 않는 꼼꼼함.",
+      "action": "주전자를 기울여 작은 원을 그리며 붓고, 떨어지는 커피를 눈으로 따라간다.",
+      "variation": "마지막 방울을 기다리느라 고개가 점점 기울었다가 방울이 떨어지면 바로 선다.",
+      "result": "차오르는 서버, 물결, 따뜻한 김.",
+      "chapter": 1,
+      "zone": 0,
+      "motion": "pour",
+      "prop": "dripper",
+      "price": 80,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": "sprites/coffee-log/local-pourover.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 3.55,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "방울의 핸드드립 바 첫 손님",
+        "request": "핸드드립 바에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "주전자를 기울여 작은 원을 그리며 붓고, 떨어지는 커피를 눈으로 따라간다.",
+        "served": "차오르는 서버, 물결, 따뜻한 김.",
+        "thanks": "방울 덕분에 오늘의 핸드드립 바 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f06",
+      "number": 6,
+      "name": "모카포트 스토브",
+      "catId": "cat06",
+      "catName": "모카",
+      "personality": "진갈색, 작은 목수건. 소리와 냄새에 먼저 반응하는 기다림 담당.",
+      "action": "모카포트를 올려두고 의자에 앉아 귀를 기울인 뒤, 완성되면 잔 옆으로 옮긴다.",
+      "variation": "소리가 날 듯하면 귀를 번쩍 세우고, 조용해지면 다시 귀를 내려놓는다.",
+      "result": "잔잔한 열기에서 완성 직전의 움직임으로 바뀌는 주전자.",
+      "chapter": 4,
+      "zone": 0,
+      "motion": "listen",
+      "prop": "moka",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": "sprites/coffee-log/local-moka.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 4.26,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "아침 산책 손님",
+        "title": "모카의 모카포트 스토브 첫 손님",
+        "request": "모카포트 스토브에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "모카포트를 올려두고 의자에 앉아 귀를 기울인 뒤, 완성되면 잔 옆으로 옮긴다.",
+        "served": "잔잔한 열기에서 완성 직전의 움직임으로 바뀌는 주전자.",
+        "thanks": "모카 덕분에 오늘의 모카포트 스토브 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f07",
+      "number": 7,
+      "name": "라테 아트 코너",
+      "catId": "cat07",
+      "catName": "우유",
+      "personality": "크림색, 작은 베레모. 자기 작품을 진지하게 바라보는 예술가.",
+      "action": "피처를 기울여 무늬를 만들고 완성된 잔을 살짝 돌려 본다.",
+      "variation": "하트를 그리려다 발바닥 무늬가 나오면 잠깐 생각하고 만족스럽게 고개를 끄덕인다.",
+      "result": "하트·발바닥·물고기 등 서로 다른 표면 무늬.",
+      "chapter": 3,
+      "zone": 1,
+      "motion": "art",
+      "prop": "latte",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": "sprites/coffee-log/local-latte-mug.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 4.97,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "우유의 라테 아트 코너 첫 손님",
+        "request": "라테 아트 코너에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "피처를 기울여 무늬를 만들고 완성된 잔을 살짝 돌려 본다.",
+        "served": "하트·발바닥·물고기 등 서로 다른 표면 무늬.",
+        "thanks": "우유 덕분에 오늘의 라테 아트 코너 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f08",
+      "number": 8,
+      "name": "아인슈페너 크림대",
+      "catId": "cat08",
+      "catName": "구름",
+      "personality": "흰색 장모, 짧은 두건. 진지하게 일하지만 털에 흔적을 남기는 타입.",
+      "action": "거품기로 크림을 만들고, 작은 스푼으로 잔 위에 봉긋하게 올린다.",
+      "variation": "코끝에 묻은 크림을 발견하지 못한 채 완성 잔과 같은 표정을 짓는다.",
+      "result": "형태가 잡히는 크림 봉우리와 한 잔의 층.",
+      "chapter": 3,
+      "zone": 1,
+      "motion": "whisk",
+      "prop": "cream",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": "sprites/coffee-log/local-einspanner.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 5.68,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "구름의 아인슈페너 크림대 첫 손님",
+        "request": "아인슈페너 크림대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "거품기로 크림을 만들고, 작은 스푼으로 잔 위에 봉긋하게 올린다.",
+        "served": "형태가 잡히는 크림 봉우리와 한 잔의 층.",
+        "thanks": "구름 덕분에 오늘의 아인슈페너 크림대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f09",
+      "number": 9,
+      "name": "콜드브루 물방울대",
+      "catId": "cat09",
+      "catName": "이슬",
+      "personality": "은색 줄무늬, 작은 안경. 오래 기다릴 수 있다고 자신하지만 자꾸 졸림.",
+      "action": "밸브를 아주 조금 돌리고 떨어지는 방울을 세듯 고개를 끄덕인다.",
+      "variation": "고개가 꾸벅 내려갈 때 큰 방울이 떨어져 다시 눈을 뜬다.",
+      "result": "긴 유리관 속 방울과 아래쪽에 서서히 고이는 커피.",
+      "chapter": 4,
+      "zone": 1,
+      "motion": "drip",
+      "prop": "coldbrew",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 6.39,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "이슬의 콜드브루 물방울대 첫 손님",
+        "request": "콜드브루 물방울대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "밸브를 아주 조금 돌리고 떨어지는 방울을 세듯 고개를 끄덕인다.",
+        "served": "긴 유리관 속 방울과 아래쪽에 서서히 고이는 커피.",
+        "thanks": "이슬 덕분에 오늘의 콜드브루 물방울대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f10",
+      "number": 10,
+      "name": "메이슨 아이스 바",
+      "catId": "cat10",
+      "catName": "찰랑",
+      "personality": "선명한 삼색, 체크 목수건. 차가운 물건 앞에서는 유난히 신중함.",
+      "action": "집게로 얼음을 넣고 긴 스푼으로 저은 뒤 컵 받침 위에 놓는다.",
+      "variation": "집게에서 미끄러진 얼음을 좌우로 바라보다 마지막 순간 잔으로 받아낸다.",
+      "result": "반짝이는 얼음, 유리잔의 물방울, 회전하다 멈추는 내용물.",
+      "chapter": 5,
+      "zone": 1,
+      "motion": "stir",
+      "prop": "mason",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": "sprites/coffee-log/local-mason.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 7.1,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "찰랑의 메이슨 아이스 바 첫 손님",
+        "request": "메이슨 아이스 바에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "집게로 얼음을 넣고 긴 스푼으로 저은 뒤 컵 받침 위에 놓는다.",
+        "served": "반짝이는 얼음, 유리잔의 물방울, 회전하다 멈추는 내용물.",
+        "thanks": "찰랑 덕분에 오늘의 메이슨 아이스 바 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f11",
+      "number": 11,
+      "name": "사이폰 실험대",
+      "catId": "cat11",
+      "catName": "보글",
+      "personality": "연기색, 둥근 고글을 이마에 올림. 실험을 구경하는 것을 가장 좋아함.",
+      "action": "도구를 점검한 뒤 유리 용기 속 액체가 움직이는 모습을 고개를 위아래로 움직이며 본다.",
+      "variation": "유리에 크게 비친 자기 얼굴을 보고 한 발 뒤로 물러났다가 다시 가까이 댄다.",
+      "result": "오르내리는 액체, 기포, 유리 너머로 왜곡되는 얼굴.",
+      "chapter": 5,
+      "zone": 1,
+      "motion": "bubble",
+      "prop": "syphon",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 7.81,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "보글의 사이폰 실험대 첫 손님",
+        "request": "사이폰 실험대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "도구를 점검한 뒤 유리 용기 속 액체가 움직이는 모습을 고개를 위아래로 움직이며 본다.",
+        "served": "오르내리는 액체, 기포, 유리 너머로 왜곡되는 얼굴.",
+        "thanks": "보글 덕분에 오늘의 사이폰 실험대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f12",
+      "number": 12,
+      "name": "카카오 모카대",
+      "catId": "cat12",
+      "catName": "코코",
+      "personality": "초콜릿색, 밝은 앞치마. 정량을 지키고 싶지만 마무리가 늘 조금 과함.",
+      "action": "작은 체로 가루를 뿌리고 스텐실을 들어 무늬를 확인한다.",
+      "variation": "체를 한 번 더 톡 쳤다가 얼굴 앞에 가루가 살짝 날려 눈을 깜빡인다.",
+      "result": "잔 위에 나타나는 달·별 등 단순 무늬와 작은 가루 입자.",
+      "chapter": 3,
+      "zone": 1,
+      "motion": "dust",
+      "prop": "cocoa",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 8.52,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "조용한 책방 손님",
+        "title": "코코의 카카오 모카대 첫 손님",
+        "request": "카카오 모카대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 체로 가루를 뿌리고 스텐실을 들어 무늬를 확인한다.",
+        "served": "잔 위에 나타나는 달·별 등 단순 무늬와 작은 가루 입자.",
+        "thanks": "코코 덕분에 오늘의 카카오 모카대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f13",
+      "number": 13,
+      "name": "반죽 작업대",
+      "catId": "cat13",
+      "catName": "버터",
+      "personality": "치즈색, 통통한 앞발. 반죽과 방석 꾹꾹이를 비슷하게 생각함.",
+      "action": "두 앞발로 번갈아 누르고 반죽을 둥글게 모은다.",
+      "variation": "반죽이 앞발에 붙어 한쪽 발을 들면 반죽도 길게 늘어나 함께 따라온다.",
+      "result": "눌렸다 돌아오는 반죽과 남은 발자국.",
+      "chapter": 2,
+      "zone": 2,
+      "motion": "knead",
+      "prop": "dough",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 9.23,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "버터의 반죽 작업대 첫 손님",
+        "request": "반죽 작업대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "두 앞발로 번갈아 누르고 반죽을 둥글게 모은다.",
+        "served": "눌렸다 돌아오는 반죽과 남은 발자국.",
+        "thanks": "버터 덕분에 오늘의 반죽 작업대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f14",
+      "number": 14,
+      "name": "크루아상 접기대",
+      "catId": "cat14",
+      "catName": "결이",
+      "personality": "연한 줄무늬, 꼼꼼한 작업복. 모서리까지 꼭 맞추는 성격.",
+      "action": "밀대로 밀고 작은 반죽을 접은 뒤 돌돌 말아 트레이에 놓는다.",
+      "variation": "말아 놓은 반죽 끝이 살짝 풀려 앞발로 눌러두고 기다린다.",
+      "result": "평평한 반죽이 층과 곡선을 가진 모양으로 바뀜.",
+      "chapter": 5,
+      "zone": 2,
+      "motion": "roll",
+      "prop": "croissant",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": "sprites/coffee-log/local-croissant.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 9.94,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "결이의 크루아상 접기대 첫 손님",
+        "request": "크루아상 접기대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "밀대로 밀고 작은 반죽을 접은 뒤 돌돌 말아 트레이에 놓는다.",
+        "served": "평평한 반죽이 층과 곡선을 가진 모양으로 바뀜.",
+        "thanks": "결이 덕분에 오늘의 크루아상 접기대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f15",
+      "number": 15,
+      "name": "작은 빵 오븐",
+      "catId": "cat15",
+      "catName": "호두",
+      "personality": "갈색 얼룩, 두꺼운 장갑. 결과를 빨리 보고 싶은 성격.",
+      "action": "긴 주걱으로 트레이를 넣고 오븐 창 앞에서 구워지는 모습을 살핀 뒤 꺼낸다.",
+      "variation": "빵이 부푸는 높이에 맞춰 자기도 조금씩 키를 세운다.",
+      "result": "부푸는 빵, 노릇해지는 색, 문이 열릴 때의 김.",
+      "chapter": 2,
+      "zone": 2,
+      "motion": "bake",
+      "prop": "oven",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": "sprites/coffee-log/local-scone.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 10.649999999999999,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "호두의 작은 빵 오븐 첫 손님",
+        "request": "작은 빵 오븐에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "긴 주걱으로 트레이를 넣고 오븐 창 앞에서 구워지는 모습을 살핀 뒤 꺼낸다.",
+        "served": "부푸는 빵, 노릇해지는 색, 문이 열릴 때의 김.",
+        "thanks": "호두 덕분에 오늘의 작은 빵 오븐 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f16",
+      "number": 16,
+      "name": "와플 프레스",
+      "catId": "cat16",
+      "catName": "와플",
+      "personality": "주황과 흰색, 짧은 조리모. 힘주는 순간 표정이 과장됨.",
+      "action": "반죽을 담고 뚜껑을 천천히 눌러 닫은 뒤 완성 와플을 꺼낸다.",
+      "variation": "뚜껑을 눌렀는데 자기 모자만 푹 내려와 앞발로 다시 올린다.",
+      "result": "격자무늬가 생긴 와플, 뚜껑 가장자리의 짧은 김.",
+      "chapter": 3,
+      "zone": 2,
+      "motion": "press",
+      "prop": "waffle",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 11.36,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "와플의 와플 프레스 첫 손님",
+        "request": "와플 프레스에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "반죽을 담고 뚜껑을 천천히 눌러 닫은 뒤 완성 와플을 꺼낸다.",
+        "served": "격자무늬가 생긴 와플, 뚜껑 가장자리의 짧은 김.",
+        "thanks": "와플 덕분에 오늘의 와플 프레스 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f17",
+      "number": 17,
+      "name": "푸딩 냉장 선반",
+      "catId": "cat17",
+      "catName": "탱글",
+      "personality": "포인트 무늬, 작은 냉장 앞치마. 흔들리는 것에 시선을 빼앗김.",
+      "action": "틀을 접시에 뒤집어 놓고 살짝 두드려 푸딩을 꺼낸다.",
+      "variation": "푸딩이 흔들릴 때 고양이 머리도 같은 방향으로 움직인다.",
+      "result": "매끈하게 빠져나오는 푸딩과 점점 잦아드는 흔들림.",
+      "chapter": 5,
+      "zone": 2,
+      "motion": "jelly",
+      "prop": "pudding",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": "sprites/coffee-log/local-cake.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 12.07,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "탱글의 푸딩 냉장 선반 첫 손님",
+        "request": "푸딩 냉장 선반에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "틀을 접시에 뒤집어 놓고 살짝 두드려 푸딩을 꺼낸다.",
+        "served": "매끈하게 빠져나오는 푸딩과 점점 잦아드는 흔들림.",
+        "thanks": "탱글 덕분에 오늘의 푸딩 냉장 선반 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f18",
+      "number": 18,
+      "name": "디저트 진열장",
+      "catId": "cat18",
+      "catName": "체리",
+      "personality": "턱시도, 리본 넥타이. 마지막 간격까지 조정하는 진열 담당.",
+      "action": "접시를 옮겨 놓고 한 걸음 물러나 구도를 확인한 뒤 조금씩 위치를 고친다.",
+      "variation": "완벽하게 맞춘 뒤 고개를 반대로 기울이더니 한 접시를 원래 자리로 돌린다.",
+      "result": "채워지는 진열장과 켜지는 작은 쇼케이스 조명.",
+      "chapter": 3,
+      "zone": 2,
+      "motion": "arrange",
+      "prop": "display",
+      "price": 170,
+      "upgrades": [
+        120,
+        190
+      ],
+      "image": "sprites/coffee-log/local-cookies.webp",
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 12.78,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "늦은 작업실 손님",
+        "title": "체리의 디저트 진열장 첫 손님",
+        "request": "디저트 진열장에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "접시를 옮겨 놓고 한 걸음 물러나 구도를 확인한 뒤 조금씩 위치를 고친다.",
+        "served": "채워지는 진열장과 켜지는 작은 쇼케이스 조명.",
+        "thanks": "체리 덕분에 오늘의 디저트 진열장 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f19",
+      "number": 19,
+      "name": "작은 종 입구",
+      "catId": "cat19",
+      "catName": "종종",
+      "personality": "삼색, 단정한 스카프. 인사를 열심히 하다가 타이밍이 엇갈림.",
+      "action": "문 옆에서 주변을 보고, 작은 종을 울린 뒤 앞발을 들어 인사한다.",
+      "variation": "종이 계속 흔들리자 두 앞발로 조용히 잡아 멈춘다.",
+      "result": "흔들리는 종, 움직이는 입구 커튼, 펼쳐지는 영업 표지.",
+      "chapter": 1,
+      "zone": 3,
+      "motion": "wave",
+      "prop": "door",
+      "price": 110,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 13.489999999999998,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "종종의 작은 종 입구 첫 손님",
+        "request": "작은 종 입구에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "문 옆에서 주변을 보고, 작은 종을 울린 뒤 앞발을 들어 인사한다.",
+        "served": "흔들리는 종, 움직이는 입구 커튼, 펼쳐지는 영업 표지.",
+        "thanks": "종종 덕분에 오늘의 작은 종 입구 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f20",
+      "number": 20,
+      "name": "컵 씻는 싱크대",
+      "catId": "cat20",
+      "catName": "뽀득",
+      "personality": "흰색 몸에 검은 귀, 방수 앞치마. 컵이 반짝일 때 가장 만족함.",
+      "action": "컵 안을 닦고 헹군 뒤 건조대에 뒤집어 놓는다.",
+      "variation": "작은 비눗방울이 코앞에 떠오르면 바라보다 터지는 순간 눈을 꽉 감는다.",
+      "result": "거품에서 반짝이는 깨끗한 컵으로 바뀌는 과정.",
+      "chapter": 1,
+      "zone": 3,
+      "motion": "wash",
+      "prop": "sink",
+      "price": 110,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 14.2,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "뽀득의 컵 씻는 싱크대 첫 손님",
+        "request": "컵 씻는 싱크대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "컵 안을 닦고 헹군 뒤 건조대에 뒤집어 놓는다.",
+        "served": "거품에서 반짝이는 깨끗한 컵으로 바뀌는 과정.",
+        "thanks": "뽀득 덕분에 오늘의 컵 씻는 싱크대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f21",
+      "number": 21,
+      "name": "원두 포장대",
+      "catId": "cat21",
+      "catName": "콩이",
+      "personality": "검정, 작은 두건. 바쁜 포장 담당, 힘 조절은 조금 서툼.",
+      "action": "종이봉투에 스쿱으로 담고 입구를 접은 뒤 발 도장을 찍는다.",
+      "variation": "도장을 힘껏 누르느라 뒷발이 살짝 들렸다 내려온다.",
+      "result": "접힌 봉투와 선명한 발 도장. 봉투 형태는 일반 포장 형태로 제작.",
+      "chapter": 1,
+      "zone": 3,
+      "motion": "stamp",
+      "prop": "bag",
+      "price": 110,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 14.91,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "콩이의 원두 포장대 첫 손님",
+        "request": "원두 포장대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "종이봉투에 스쿱으로 담고 입구를 접은 뒤 발 도장을 찍는다.",
+        "served": "접힌 봉투와 선명한 발 도장. 봉투 형태는 일반 포장 형태로 제작.",
+        "thanks": "콩이 덕분에 오늘의 원두 포장대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f22",
+      "number": 22,
+      "name": "높은 책장",
+      "catId": "cat22",
+      "catName": "잉크",
+      "personality": "턱시도, 작은 독서 안경. 책을 좋아하지만 몇 장 넘기면 잠이 옴.",
+      "action": "낮은 사다리에서 책을 꺼내 펼치고 페이지를 한 장씩 넘긴다.",
+      "variation": "책갈피 끈이 흔들리면 졸던 눈을 뜨고 앞발로 톡 건드린다.",
+      "result": "펼쳐지는 그림책, 움직이는 책갈피, 위아래 높이 차이.",
+      "chapter": 5,
+      "zone": 3,
+      "motion": "read",
+      "prop": "books",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 15.62,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "잉크의 높은 책장 첫 손님",
+        "request": "높은 책장에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "낮은 사다리에서 책을 꺼내 펼치고 페이지를 한 장씩 넘긴다.",
+        "served": "펼쳐지는 그림책, 움직이는 책갈피, 위아래 높이 차이.",
+        "thanks": "잉크 덕분에 오늘의 높은 책장 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f23",
+      "number": 23,
+      "name": "레코드 코너",
+      "catId": "cat23",
+      "catName": "리듬",
+      "personality": "회색, 큰 헤드폰을 목에 걸침. 박자에 자연스럽게 몸이 움직임.",
+      "action": "레코드를 올리고 한쪽 앞발과 꼬리로 번갈아 박자를 탄다.",
+      "variation": "몰입해 두 앞발을 모두 들었다가 균형을 잡으려고 쿠션을 꼭 붙든다.",
+      "result": "돌아가는 레코드, 작은 스피커 진동, 조명의 느린 밝기 변화.",
+      "chapter": 5,
+      "zone": 3,
+      "motion": "music",
+      "prop": "record",
+      "price": 230,
+      "upgrades": [
+        160,
+        250
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 16.33,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "리듬의 레코드 코너 첫 손님",
+        "request": "레코드 코너에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "레코드를 올리고 한쪽 앞발과 꼬리로 번갈아 박자를 탄다.",
+        "served": "돌아가는 레코드, 작은 스피커 진동, 조명의 느린 밝기 변화.",
+        "thanks": "리듬 덕분에 오늘의 레코드 코너 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f24",
+      "number": 24,
+      "name": "주문 카드대",
+      "catId": "cat24",
+      "catName": "메모",
+      "personality": "고등어 줄무늬, 귀 뒤에 짧은 연필. 메모를 줄 맞춰 붙이는 기록 담당.",
+      "action": "작은 주문 카드를 읽고 표시한 뒤 클립 줄에 차례대로 건다.",
+      "variation": "바람에 카드 한 장이 얼굴에 붙으면 잠깐 멈췄다가 앞발로 떼어 낸다.",
+      "result": "빈 클립 줄에 걸리는 색깔 카드와 체크 표시.",
+      "chapter": 2,
+      "zone": 3,
+      "motion": "hang",
+      "prop": "cards",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 17.04,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "꽃을 고르는 손님",
+        "title": "메모의 주문 카드대 첫 손님",
+        "request": "주문 카드대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 주문 카드를 읽고 표시한 뒤 클립 줄에 차례대로 건다.",
+        "served": "빈 클립 줄에 걸리는 색깔 카드와 체크 표시.",
+        "thanks": "메모 덕분에 오늘의 주문 카드대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f25",
+      "number": 25,
+      "name": "햇살 창가",
+      "catId": "cat25",
+      "catName": "만두",
+      "personality": "둥근 삼색, 별도 작업복 없이 작은 목수건. 카페의 낮잠 단골.",
+      "action": "방석 꾹꾹이, 몸 말기, 느린 호흡, 꼬리 끝 움직임.",
+      "variation": "햇빛을 따라 앞발을 길게 뻗다가 몸 전체가 늘어진다.",
+      "result": "방석의 눌림, 살랑이는 커튼, 고양이 위의 햇빛.",
+      "chapter": 1,
+      "zone": 4,
+      "motion": "sleep",
+      "prop": "window",
+      "price": 110,
+      "upgrades": [
+        80,
+        130
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 17.75,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "만두의 햇살 창가 첫 손님",
+        "request": "햇살 창가에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "방석 꾹꾹이, 몸 말기, 느린 호흡, 꼬리 끝 움직임.",
+        "served": "방석의 눌림, 살랑이는 커튼, 고양이 위의 햇빛.",
+        "thanks": "만두 덕분에 오늘의 햇살 창가 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f26",
+      "number": 26,
+      "name": "화분 온실",
+      "catId": "cat26",
+      "catName": "새싹",
+      "personality": "회색 줄무늬, 초록 작업 앞치마. 잎 하나까지 살피는 정원사.",
+      "action": "작은 물뿌리개로 물을 주고 잎을 확인한 뒤 화분 방향을 살짝 돌린다.",
+      "variation": "자기 꼬리에 떨어진 물방울을 느끼고 뒤를 돌아본다.",
+      "result": "잎 끝 물방울, 촉촉해진 흙, 작은 잎의 흔들림.",
+      "chapter": 4,
+      "zone": 4,
+      "motion": "water",
+      "prop": "plants",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 18.46,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "새싹의 화분 온실 첫 손님",
+        "request": "화분 온실에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 물뿌리개로 물을 주고 잎을 확인한 뒤 화분 방향을 살짝 돌린다.",
+        "served": "잎 끝 물방울, 촉촉해진 흙, 작은 잎의 흔들림.",
+        "thanks": "새싹 덕분에 오늘의 화분 온실 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f27",
+      "number": 27,
+      "name": "꽃다발 작업대",
+      "catId": "cat27",
+      "catName": "꽃잠",
+      "personality": "옅은 삼색, 얇은 리본. 색 조합을 오래 고민하는 꾸미기 담당.",
+      "action": "꽃을 한 송이씩 골라 다발을 만들고 리본을 묶는다.",
+      "variation": "리본 끝이 발에 걸려 한 바퀴 작게 돌았다가 침착하게 풀어 낸다.",
+      "result": "색이 모이는 작은 꽃다발, 마지막에 생기는 리본 매듭.",
+      "chapter": 4,
+      "zone": 4,
+      "motion": "tie",
+      "prop": "flowers",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 19.169999999999998,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "꽃잠의 꽃다발 작업대 첫 손님",
+        "request": "꽃다발 작업대에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "꽃을 한 송이씩 골라 다발을 만들고 리본을 묶는다.",
+        "served": "색이 모이는 작은 꽃다발, 마지막에 생기는 리본 매듭.",
+        "thanks": "꽃잠 덕분에 오늘의 꽃다발 작업대 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f28",
+      "number": 28,
+      "name": "흔들 해먹",
+      "catId": "cat28",
+      "catName": "느루",
+      "personality": "길쭉한 크림색, 느긋한 성격. 자는 동안에도 편한 자세를 찾음.",
+      "action": "한쪽 앞발로 땅을 살짝 밀고 해먹을 흔들다가 몸을 늘어뜨린다.",
+      "variation": "한 번 더 편해지려 뒤집다가 해먹과 함께 흔들려 양옆을 꼭 붙든다.",
+      "result": "무게에 따라 처지는 천과 느려지는 흔들림.",
+      "chapter": 2,
+      "zone": 4,
+      "motion": "swing",
+      "prop": "hammock",
+      "price": 140,
+      "upgrades": [
+        100,
+        160
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 19.88,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "느루의 흔들 해먹 첫 손님",
+        "request": "흔들 해먹에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "한쪽 앞발로 땅을 살짝 밀고 해먹을 흔들다가 몸을 늘어뜨린다.",
+        "served": "무게에 따라 처지는 천과 느려지는 흔들림.",
+        "thanks": "느루 덕분에 오늘의 흔들 해먹 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f29",
+      "number": 29,
+      "name": "앞치마 빨랫줄",
+      "catId": "cat29",
+      "catName": "솜솜",
+      "personality": "흰 장모, 접어 올린 소매. 바람과 함께 정리하는 것을 좋아함.",
+      "action": "작은 앞치마를 털어 펼치고 집게로 빨랫줄에 건다.",
+      "variation": "바람에 앞치마가 얼굴을 가리면 아래로 몸을 숙여 빼꼼 나온다.",
+      "result": "펄럭이는 천, 색이 다른 앞치마, 햇빛에 마르는 느낌.",
+      "chapter": 4,
+      "zone": 4,
+      "motion": "hang",
+      "prop": "laundry",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 20.59,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "솜솜의 앞치마 빨랫줄 첫 손님",
+        "request": "앞치마 빨랫줄에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 앞치마를 털어 펼치고 집게로 빨랫줄에 건다.",
+        "served": "펄럭이는 천, 색이 다른 앞치마, 햇빛에 마르는 느낌.",
+        "thanks": "솜솜 덕분에 오늘의 앞치마 빨랫줄 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f30",
+      "number": 30,
+      "name": "피크닉 매트",
+      "catId": "cat30",
+      "catName": "소풍",
+      "personality": "주황색, 체크 스카프. 준비를 마치면 꼭 한 가지를 다시 꺼내 보는 성격.",
+      "action": "바구니에서 컵과 작은 접시를 꺼내 간격을 맞춰 놓고 자리에 앉는다.",
+      "variation": "매트 모서리가 말리자 한쪽 발로 누르는데 반대쪽이 올라와 몸을 길게 뻗는다.",
+      "result": "비어 있던 매트가 작은 피크닉 자리로 채워짐.",
+      "chapter": 4,
+      "zone": 4,
+      "motion": "arrange",
+      "prop": "picnic",
+      "price": 200,
+      "upgrades": [
+        140,
+        220
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 21.299999999999997,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "비를 피한 손님",
+        "title": "소풍의 피크닉 매트 첫 손님",
+        "request": "피크닉 매트에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "바구니에서 컵과 작은 접시를 꺼내 간격을 맞춰 놓고 자리에 앉는다.",
+        "served": "비어 있던 매트가 작은 피크닉 자리로 채워짐.",
+        "thanks": "소풍 덕분에 오늘의 피크닉 매트 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f31",
+      "number": 31,
+      "name": "등불 길",
+      "catId": "cat31",
+      "catName": "반짝",
+      "personality": "검정 몸에 흰 턱, 작은 조끼. 켜지는 불을 하나씩 확인하는 야간 담당.",
+      "action": "낮은 발판을 옮겨 작은 등을 켜고 한 걸음 물러나 밝기를 확인한다.",
+      "variation": "불이 켜지며 생긴 자기 그림자가 커지자 그림자와 같은 자세를 해 본다.",
+      "result": "순서대로 켜지는 따뜻한 등과 바닥의 빛.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "light",
+      "prop": "lamps",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 22.009999999999998,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "반짝의 등불 길 첫 손님",
+        "request": "등불 길에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "낮은 발판을 옮겨 작은 등을 켜고 한 걸음 물러나 밝기를 확인한다.",
+        "served": "순서대로 켜지는 따뜻한 등과 바닥의 빛.",
+        "thanks": "반짝 덕분에 오늘의 등불 길 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f32",
+      "number": 32,
+      "name": "별 보는 망원경",
+      "catId": "cat32",
+      "catName": "별이",
+      "personality": "푸른 회색, 짧은 망토. 호기심이 많고 거리 감각은 조금 부족함.",
+      "action": "망원경 높이를 맞추고 발끝을 세워 들여다본 뒤 별 지도를 확인한다.",
+      "variation": "눈을 너무 가까이 대었다가 뒤로 물러나 한쪽 눈을 찡긋거린다.",
+      "result": "반짝이는 별, 방향이 바뀌는 망원경, 펼쳐진 별 지도.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "look",
+      "prop": "telescope",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 22.72,
+      "animationSeconds": 6,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "별이의 별 보는 망원경 첫 손님",
+        "request": "별 보는 망원경에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "망원경 높이를 맞추고 발끝을 세워 들여다본 뒤 별 지도를 확인한다.",
+        "served": "반짝이는 별, 방향이 바뀌는 망원경, 펼쳐진 별 지도.",
+        "thanks": "별이 덕분에 오늘의 별 보는 망원경 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f33",
+      "number": 33,
+      "name": "편지 쓰는 책상",
+      "catId": "cat33",
+      "catName": "우표",
+      "personality": "작은 삼색, 헐렁한 가디건. 한 문장을 오래 고민하는 성격.",
+      "action": "편지에 몇 글자를 쓰고 봉투에 넣은 뒤 작은 스탬프를 찍는다.",
+      "variation": "스탬프가 앞발에 붙어 떼려다 반대 앞발로 옮겨 붙인다.",
+      "result": "빈 종이에 채워지는 선, 접힌 편지와 닫힌 봉투.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "write",
+      "prop": "letter",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 23.43,
+      "animationSeconds": 7,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "우표의 편지 쓰는 책상 첫 손님",
+        "request": "편지 쓰는 책상에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "편지에 몇 글자를 쓰고 봉투에 넣은 뒤 작은 스탬프를 찍는다.",
+        "served": "빈 종이에 채워지는 선, 접힌 편지와 닫힌 봉투.",
+        "thanks": "우표 덕분에 오늘의 편지 쓰는 책상 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f34",
+      "number": 34,
+      "name": "담요 소파",
+      "catId": "cat34",
+      "catName": "포근",
+      "personality": "둥근 크림색, 잠옷 무늬 목수건. 가능한 한 담요 속에 숨고 싶어 함.",
+      "action": "담요를 앞발로 끌어당겨 덮고 둥글게 기대어 숨을 쉰다.",
+      "variation": "담요 속에서 잠깐 발이 움직인 뒤 얼굴 대신 꼬리만 엉뚱한 쪽으로 나온다.",
+      "result": "담요 속 작은 움직임, 쿠션의 눌림, 낮은 독서등.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "sleep",
+      "prop": "sofa",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 24.14,
+      "animationSeconds": 8,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "포근의 담요 소파 첫 손님",
+        "request": "담요 소파에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "담요를 앞발로 끌어당겨 덮고 둥글게 기대어 숨을 쉰다.",
+        "served": "담요 속 작은 움직임, 쿠션의 눌림, 낮은 독서등.",
+        "thanks": "포근 덕분에 오늘의 담요 소파 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f35",
+      "number": 35,
+      "name": "추억 사진관",
+      "catId": "cat35",
+      "catName": "찰칵",
+      "personality": "은색 얼룩, 카메라 스트랩. 준비는 철저한데 셔터 순간에 서두름.",
+      "action": "작은 배경판과 소품을 정돈하고 타이머를 누른 뒤 표시된 자리에 선다.",
+      "variation": "셔터 직전에 리본을 고치려다 어정쩡한 자세로 찍히고 사진을 보고 고개를 갸웃한다.",
+      "result": "짧은 촬영 표시와 현상되듯 나타나는 작은 사진.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "photo",
+      "prop": "camera",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 24.849999999999998,
+      "animationSeconds": 4,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "찰칵의 추억 사진관 첫 손님",
+        "request": "추억 사진관에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "작은 배경판과 소품을 정돈하고 타이머를 누른 뒤 표시된 자리에 선다.",
+        "served": "짧은 촬영 표시와 현상되듯 나타나는 작은 사진.",
+        "thanks": "찰칵 덕분에 오늘의 추억 사진관 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    },
+    {
+      "id": "f36",
+      "number": 36,
+      "name": "빗소리 처마",
+      "catId": "cat36",
+      "catName": "빗방울",
+      "personality": "청회색, 폭신한 스카프. 내리는 비를 오래 구경하는 조용한 성격.",
+      "action": "처마 아래 앉아 물방울을 눈으로 따라가고 가끔 앞발을 살짝 내민다.",
+      "variation": "발에 물방울이 닿으면 아주 작게 털고 다시 같은 자리에 내민다.",
+      "result": "처마 끝 물방울, 작은 웅덩이 파문, 고양이 옆의 따뜻한 조명.",
+      "chapter": 6,
+      "zone": 5,
+      "motion": "rain",
+      "prop": "rain",
+      "price": 260,
+      "upgrades": [
+        180,
+        280
+      ],
+      "image": null,
+      "artStatus": "temporary",
+      "atlas": null,
+      "sequenceOffset": 25.56,
+      "animationSeconds": 5,
+      "story": {
+        "guest": "별을 보러 온 손님",
+        "title": "빗방울의 빗소리 처마 첫 손님",
+        "request": "빗소리 처마에서 잠깐 쉬어 가도 될까요?",
+        "preparing": "처마 아래 앉아 물방울을 눈으로 따라가고 가끔 앞발을 살짝 내민다.",
+        "served": "처마 끝 물방울, 작은 웅덩이 파문, 고양이 옆의 따뜻한 조명.",
+        "thanks": "빗방울 덕분에 오늘의 빗소리 처마 시간을 기억할게요.",
+        "stages": [
+          "주문 접수",
+          "함께 준비",
+          "손님 이용",
+          "감사 인사"
+        ]
+      }
+    }
+  ],
+  "zones": [
+    {
+      "id": 0,
+      "name": "원두 작업실",
+      "color": "#EEDFCC"
+    },
+    {
+      "id": 1,
+      "name": "음료 연구실",
+      "color": "#DDEDEB"
+    },
+    {
+      "id": 2,
+      "name": "베이커리",
+      "color": "#F3E1CE"
+    },
+    {
+      "id": 3,
+      "name": "카페 홀",
+      "color": "#E8E2EF"
+    },
+    {
+      "id": 4,
+      "name": "햇살 정원",
+      "color": "#DEEDD8"
+    },
+    {
+      "id": 5,
+      "name": "밤의 테라스",
+      "color": "#DDE2F1"
+    }
+  ],
+  "chapters": [
+    {
+      "id": 1,
+      "name": "첫 손님을 맞는 카페",
+      "representative": "f05",
+      "facilities": [
+        "f19",
+        "f05",
+        "f21",
+        "f25",
+        "f01",
+        "f20"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "우리 손으로 준비하는 카페",
+      "representative": "f13",
+      "facilities": [
+        "f03",
+        "f02",
+        "f13",
+        "f15",
+        "f24",
+        "f28"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "메뉴가 풍성해지는 카페",
+      "representative": "f07",
+      "facilities": [
+        "f04",
+        "f07",
+        "f08",
+        "f12",
+        "f16",
+        "f18"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "바깥으로 넓어진 카페",
+      "representative": "f26",
+      "facilities": [
+        "f06",
+        "f09",
+        "f26",
+        "f27",
+        "f29",
+        "f30"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "취향이 생기는 카페",
+      "representative": "f22",
+      "facilities": [
+        "f10",
+        "f11",
+        "f14",
+        "f17",
+        "f22",
+        "f23"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "밤에도 머무는 카페",
+      "representative": "f31",
+      "facilities": [
+        "f31",
+        "f32",
+        "f33",
+        "f34",
+        "f35",
+        "f36"
+      ]
+    }
+  ],
+  "decorations": [
+    {
+      "id": "d-wood-floor",
+      "name": "따뜻한 나무 바닥",
+      "category": "공간",
+      "kind": "floor",
+      "price": 25,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-stone-floor",
+      "name": "밝은 돌 바닥",
+      "category": "공간",
+      "kind": "floor",
+      "price": 25,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-brick-path",
+      "name": "작은 벽돌 길",
+      "category": "공간",
+      "kind": "path",
+      "price": 25,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-leaf-path",
+      "name": "잎사귀 징검길",
+      "category": "공간",
+      "kind": "path",
+      "price": 25,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-fence",
+      "name": "낮은 나무 울타리",
+      "category": "공간",
+      "kind": "fence",
+      "price": 35,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-garden-lamp",
+      "name": "작은 정원 조명",
+      "category": "공간",
+      "kind": "lamp",
+      "price": 40,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-cups",
+      "name": "쌓아둔 커피 잔",
+      "category": "생활",
+      "kind": "cups",
+      "price": 15,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-books",
+      "name": "느긋한 책 더미",
+      "category": "생활",
+      "kind": "books",
+      "price": 20,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-coaster",
+      "name": "동그란 코스터",
+      "category": "생활",
+      "kind": "coaster",
+      "price": 15,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-menu",
+      "name": "손글씨 메뉴판",
+      "category": "생활",
+      "kind": "menu",
+      "price": 20,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-plant",
+      "name": "초록 화분",
+      "category": "자연",
+      "kind": "plant",
+      "price": 20,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-flowers",
+      "name": "작은 꽃 화분",
+      "category": "자연",
+      "kind": "flowers",
+      "price": 25,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-tree",
+      "name": "어린 그늘 나무",
+      "category": "자연",
+      "kind": "tree",
+      "price": 50,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-vase",
+      "name": "테이블 꽃병",
+      "category": "자연",
+      "kind": "vase",
+      "price": 20,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-curtain",
+      "name": "가벼운 커튼",
+      "category": "스타일",
+      "kind": "curtain",
+      "price": 35,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-cushion",
+      "name": "푹신한 방석",
+      "category": "스타일",
+      "kind": "cushion",
+      "price": 20,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-table",
+      "name": "작은 원형 테이블",
+      "category": "스타일",
+      "kind": "table",
+      "price": 35,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-chair",
+      "name": "편안한 의자",
+      "category": "스타일",
+      "kind": "chair",
+      "price": 30,
+      "artStatus": "temporary"
+    },
+    {
+      "id": "d-rug",
+      "name": "작은 니트 러그",
+      "category": "스타일",
+      "kind": "rug",
+      "price": 30,
+      "artStatus": "temporary"
+    }
+  ]
+}; if(typeof module==='object'&&module.exports)module.exports=data;else root.CafeCatalog=data;})(globalThis);
