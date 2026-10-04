@@ -3613,7 +3613,7 @@
 
     const scoreLabel = '점수 ' + fmt(shownScore);
     ctx.font = '800 15px ' + FONT;
-    const titleW = ctx.measureText('루미').width;
+    const titleW = ctx.measureText(window.PuzzleTileTheme.boardTitle).width;
     ui.score = { x: left + titleW + 14, y: titleY };
     ctx.save();
     ctx.translate(ui.score.x, titleY);
